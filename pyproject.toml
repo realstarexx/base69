@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pybase69"
+version = "0.1.0"
+description = "Base64 Alternative :3"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT"}
+authors = [
+    {name = "Starexx", email = "starexx.m@gmail.com"}
+]
+
+[project.scripts]
+base69 = "base69:cli"
+
+[project.urls]
+Homepage = "https://github.com/realstarexx/base69"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
